@@ -1,16 +1,46 @@
 @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'),
+  url('../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+
 header[role='banner']{
   @extend .col-md-12;
 
 }
 
+nav[role='navigation']{
+  @extend .navbar;
+  @extend .navbar-default;
+}
+
 main[role='main']{
-  @extend .col-md-10;
+  @extend .col-md-12;
+}
+
+section[role='marquee']{
+  @extend .col-md-12;
 }
 
 article[role='article']{
-  @extend .col-md-12;
+  /*@extend .col-md-12;*/
 }
 
 aside[role='complementary']{
@@ -18,7 +48,26 @@ aside[role='complementary']{
 }
 
 footer[role='contentinfo']{
-  @extend .col-md-12;
   text-align:center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
 }
+
+
+#carousel-homepage{
+  .carousel-inner{
+    .item{
+      img{
+        @extend .img-responsive;
+      }
+    }
+  }
+}
+
+
+
+
 

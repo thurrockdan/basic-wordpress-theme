@@ -1,5 +1,13 @@
 <?php
 
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+
+//Register the main navigation
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+) );
+
 // add a favicon to the website, make this dynamic later...
 function blog_favicon() {
     echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('wpurl').'http://cdn3.wpbeginner.com/favicon.ico" />';
@@ -49,4 +57,18 @@ function add_responsive_class($content){
 }
 add_filter('the_content', 'add_responsive_class');
 
+
+function basic_widget_init() {
+    // Area 1, located at the top of the sidebar.
+    register_sidebar( array(
+        'name' => __( 'Primary Widget Area', 'basic' ),
+        'id' => 'primary-widget-area',
+        'description' => __( 'The primary widget area', 'basic' ),
+        'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+}
+add_action( 'widgets_init', 'basic_widget_init' );
 ?>
