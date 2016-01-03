@@ -4,7 +4,7 @@ This theme is the most basic of WordPress themes
 
 ## Installation
 
-* In your themes directory ```git clone git@github.com:thurrockdan/school-theme.git themeNameHere``` 
+* ```git clone git@github.com:thurrockdan/school-theme.git themeNameHere``` In your themes directory 
 * ```npm install``` Install npm 
 * ```bower install``` Install Bower dependencies
 * ```composer install``` Install Composer dependencies
