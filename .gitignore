@@ -4,3 +4,4 @@
 app/assets/css/*
 node_modules
 bower_components
+vendor/*
