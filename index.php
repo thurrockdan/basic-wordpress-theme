@@ -12,12 +12,6 @@ get_template_part( 'header' );
         <?php get_template_part('nav'); ?>
     </nav>
 
-    <section role="marquee">
-
-        <?php get_template_part('slider'); ?>
-
-    </section>
-
     <main role="main">
 
         <article role="article" id="content" tabindex="-1">
@@ -28,9 +22,6 @@ get_template_part( 'header' );
 
     </main>
 
-    <aside role="complementary">
-        <?php get_template_part('sidebar'); ?>
-    </aside>
 
 </div>
 
