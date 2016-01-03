@@ -1,5 +1,5 @@
 {
-	"name": "thurrockdan/school-theme",
+	"name": "thurrockdan/basic-wordpress-theme",
 	"type": "wordpress-theme",
 	"require": {
 		"composer/installers": "v1.0.6"
