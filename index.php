@@ -25,11 +25,7 @@ get_template_part( 'includes/header' );
 
 </div>
 
-    <footer role="contentinfo">
 
-        Copyright &copy; 2015 Website Name
-
-    </footer>
 <?php
 get_template_part('includes/footer');
 ?>
