@@ -1,6 +1,6 @@
 <?php
 /* Index page. */
-get_template_part( 'header' );
+get_template_part( 'includes/header' );
 ?>
 <div class="container-fluid">
     <header role="banner">
@@ -9,14 +9,14 @@ get_template_part( 'header' );
     </header>
 
     <nav role="navigation">
-        <?php get_template_part('nav'); ?>
+        <?php get_template_part('includes/nav'); ?>
     </nav>
 
     <main role="main">
 
         <article role="article" id="content" tabindex="-1">
 
-            <?php get_template_part('loop'); ?>
+            <?php get_template_part('includes/loop'); ?>
 
         </article>
 
@@ -31,5 +31,5 @@ get_template_part( 'header' );
 
     </footer>
 <?php
-get_template_part('footer');
+get_template_part('includes/footer');
 ?>
