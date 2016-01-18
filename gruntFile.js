@@ -36,13 +36,26 @@ module.exports = function(grunt) {
                     files: '<%= project.assets %>/js/{,*/}*.js',
                     tasks: ['uglify:dev']
                 }
-		}
+		},
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 'server.com',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'path/to/source/folder',
+                dest: '/path/to/destination/folder',
+                exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
+            }
+        }
 
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
 	grunt.registerTask('default', [
 
 	]);

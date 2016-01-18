@@ -1,7 +1,7 @@
 <?php
 
 // Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
+require_once('includes/wp_bootstrap_navwalker.php');
 
 //Register the main navigation
 register_nav_menus( array(
