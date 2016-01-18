@@ -3,11 +3,11 @@ Error: File to import not found or unreadable: bower_components/bootstrap-sass/a
         on line 1 of style.scss
 
 1: @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
-2: @import 'theme.scss';
+2: @import 'media.scss';
 3: 
-4: body {
-5:   padding-top: 50px;
-6: }
+4: 
+5: body {
+6:   padding-top: 50px;
 
 Backtrace:
 style.scss:1
@@ -53,4 +53,4 @@ style.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bower_components/bootstrap-sass/assets/stylesheets/bootstrap.\A         on line 1 of style.scss\A \A 1: @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';\A 2: @import 'theme.scss';\A 3: \A 4: body {\A 5:   padding-top: 50px;\A 6: }"; }
+  content: "Error: File to import not found or unreadable: bower_components/bootstrap-sass/assets/stylesheets/bootstrap.\A         on line 1 of style.scss\A \A 1: @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';\A 2: @import 'media.scss';\A 3: \A 4: \A 5: body {\A 6:   padding-top: 50px;"; }
