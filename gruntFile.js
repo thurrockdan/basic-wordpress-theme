@@ -36,28 +36,13 @@ module.exports = function(grunt) {
                     files: '<%= project.assets %>/js/{,*/}*.js',
                     tasks: ['uglify:dev']
                 }
-		},
-		bower: {
-            dev: {
-                base: 'bower_components',
-                dest: '<%= project.assets %>/bower_components',
-                options: {
-                    checkExistence: true,
-                    debugging: true,
-                    paths: {
-                        bowerDirectory: 'bower_components',
-                        bowerrc: '.bowerrc',
-                        bowerJson: 'bower.json'
-                    }
-                }
-            }
-        }
+		}
+
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('main-bower-files');
 	grunt.registerTask('default', [
 
 	]);
