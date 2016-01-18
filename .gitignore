@@ -7,4 +7,4 @@ app/assets/components/
 node_modules
 bower_components
 vendor/*
-
+.ftppass
