@@ -1,7 +1,10 @@
 .idea/*
 .sass-cache/
 .sass-cache/*
-app/assets/css/*
+app/assets/dist/css/*
+app/assets/dist/js/*
+app/assets/components/
 node_modules
 bower_components
 vendor/*
+.ftppass

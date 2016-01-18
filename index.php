@@ -2,30 +2,27 @@
 /* Index page. */
 get_template_part( 'includes/header' );
 ?>
-<div class="container-fluid">
-    <header role="banner">
 
 
-    </header>
-
-    <nav role="navigation">
-        <?php get_template_part('includes/nav'); ?>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <?php get_template_part('includes/nav'); ?>
+        </div>
     </nav>
 
-    <main role="main">
+    <div class="container">
+        <main role="main">
 
-        <article role="article" id="content" tabindex="-1">
+            <article role="article" id="content" tabindex="-1">
 
-            <?php get_template_part('includes/loop'); ?>
+                <?php get_template_part('includes/loop'); ?>
 
-        </article>
+            </article>
 
-    </main>
-
-
-</div>
+        </main>
+    </div>
 
 
-<?php
-get_template_part('includes/footer');
-?>
+    <div class="container">
+        <?php get_template_part('includes/footer'); ?>
+    </div>

@@ -1,7 +1,7 @@
 <?php
 
 // Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
+require_once('includes/wp_bootstrap_navwalker.php');
 
 //Register the main navigation
 register_nav_menus( array(
@@ -10,7 +10,7 @@ register_nav_menus( array(
 
 // add a favicon to the website, make this dynamic later...
 function blog_favicon() {
-    echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('wpurl').'http://cdn3.wpbeginner.com/favicon.ico" />';
+    echo '<link rel="Shortcut Icon" type="image/x-icon" href="'. get_template_directory_uri() . '/app/assets/favicon.ico" />';
 }
 add_action('wp_head', 'blog_favicon');
 
@@ -18,7 +18,7 @@ add_action('wp_head', 'blog_favicon');
 //Enque all scripts and CSS files
 function school_scripts() {
     //Base CSS file includes bootstrap.css
-    wp_enqueue_style( 'layout-style', get_template_directory_uri() . '/app/assets/css/style.css' );
+    wp_enqueue_style( 'layout-style', get_template_directory_uri() . '/app/assets/dist/css/style.css' );
     //Any CSS overrides that need to be done
     wp_enqueue_style( 'spare-style', get_stylesheet_uri() );
 
