@@ -1,6 +1,10 @@
 {
-	"name": "thurrockdan/basic-wordpress-theme",
+	"name": "EcomUK/basic-wordpress-theme",
 	"type": "wordpress-theme",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:EcomUK/basic-wordpress-theme.git"
+	},
 	"require": {
 		"composer/installers": "v1.0.6"
 	}
